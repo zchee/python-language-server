@@ -11,10 +11,24 @@ install_requires = [
         'future>=0.14.0; python_version<"3"',
         'backports.functools_lru_cache; python_version<"3.2"',
         'jedi>=0.17.2,<0.18.0',
-        'python-jsonrpc-server>=0.4.0',
-        'pluggy',
+        'python-jsonrpc-server@git+https://github.com/palantir/python-jsonrpc-server',
+        'pluggy@git+https://github.com/pytest-dev/pluggy',
         'ujson<=2.0.3 ; platform_system!="Windows" and python_version<"3.0"',
-        'ujson>=3.0.0 ; python_version>"3"']
+        'ujson>=3.0.0 ; python_version>"3"',
+        'autopep8@git+https://github.com/hhatto/autopep8',
+        'flake8@git+https://gitlab.com/pycqa/flake8',
+        'mccabe@git+https://github.com/PyCQA/mccabe',
+        'pycodestyle@git+https://github.com/PyCQA/pycodestyle',
+        'pydocstyle@git+https://github.com/PyCQA/pydocstyle',
+        'pyflakes@git+https://github.com/PyCQA/pyflakes',
+        'pylint@git+https://github.com/PyCQA/pylint',
+        'rope@git+https://github.com/python-rope/rope',
+        'yapf@git+https://github.com/google/yapf',
+        'pyls-mypy@git+https://github.com/tomv564/pyls-mypy',
+        'mypy@git+https://github.com/python/mypy',
+        'pyls-isort@git+https://github.com/paradoxxxzero/pyls-isort',
+        'pyls-black@git+https://github.com/rupert/pyls-black',
+        'black@git+https://github.com/psf/black']
 
 setup(
     name='python-language-server',
