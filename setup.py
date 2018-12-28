@@ -33,11 +33,41 @@ setup(
     # https://packaging.python.org/en/latest/requirements.html
     install_requires=[
         'configparser; python_version<"3.0"',
-        'future>=0.14.0',
+        'future',
         'futures; python_version<"3.2"',
-        'jedi>=0.12',
+        'jedi',
         'python-jsonrpc-server',
-        'pluggy'
+        'pluggy',
+        'autopep8',
+        'mccabe',
+        'pycodestyle',
+        'pydocstyle',
+        'pyflakes',
+        'rope',
+        'yapf',
+        'pyls-isort',
+        'pyls-black',
+        'black',
+    ],
+
+    dependency_links=[
+        'hg+https://bitbucket.org/ambv/configparser@default#egg=configparser'
+        'git+https://github.com/PythonCharmers/python-future@master#egg=future',
+        'git+https://github.com/agronholm/pythonfutures@master#egg=futures',
+        'git+https://github.com/zchee/jedi@typeshed-dev#egg=jedi',
+        'git+https://github.com/palantir/python-jsonrpc-server@master#egg=python-jsonrpc-server',
+        'git+https://github.com/pytest-dev/pluggy@master#egg=pluggy',
+        'git+https://github.com/hhatto/autopep8@master#egg=autopep8',
+        'git+https://github.com/PyCQA/mccabet@master#egg=mccabe',
+        'git+https://github.com/PyCQA/pycodestyle@master#egg=pycodestyle',
+        'git+https://github.com/PyCQA/pydocstyle@master#egg=pydocstyle',
+        'git+https://github.com/PyCQA/pyflakes@master#egg=pyflakes',
+        'git+https://github.com/python-rope/rope@master#egg=rope',
+        'git+https://github.com/google/yapf@master#egg=yapf',
+        'git+https://github.com/tomv564/pyls-mypy@master#egg=pyls-mypy',
+        'git+https://github.com/paradoxxxzero/pyls-isort@master#egg=pyls-isort',
+        'git+https://github.com/rupert/pyls-black@master#egg=pyls-black',
+        'git+https://github.com/ambv/black@master#egg=black'
     ],
 
     # List additional groups of dependencies here (e.g. development
